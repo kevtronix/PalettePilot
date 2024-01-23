@@ -1,5 +1,12 @@
 import requests
 from flask import Flask
+from dotenv import load_dotenv
+import os
+
+
+load_dotenv()
+
+api_key = os.getenv('API_KEY')
 
 app = Flask(__name__)
 
